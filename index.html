@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>chickenWebDetector</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/upload.js"></script>
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div class="header-box">
+            <div class="headerbox-content">
+                <h1 class="title-text">chicken ai - Detect and Track using ai</h1>
+            </div>
+        </div>
+
+        <!-- BODY -->
+        <div class="body-box">
+            <!-- BOXY TOP -->
+            <div class="body-topb">
+                <h2 class="img-top-text">An AI Model that detects and tracks chickens in videos</h2>
+                <div class="img-box">
+                <img class="chicken-img" src="images/detect.png" width="210" height="240">
+                </div>
+                <h2 class="img-bottom-text">Try it out - upload your video and see how the model performs </h2>
+            </div>
+
+            <!-- BODY MID -->
+            <div class="body-midb">
+
+              
+                <form id="upload-img">
+                    <input class="input-file" accept=".mp4, .mvi" type="file" id="video-file" name="input-video" hidden>
+                    <label for="video-file" class="upload-video">
+                        Click Here to Upload video    
+                    </label>
+                    <div class="button-div">
+                    <button id="detect-button" type="submit">DETECT</button>
+                    </div>
+             
+                </form>
+                
+            </div>
+
+            <!-- BODY LOW -->
+            <div class="body-lowb">
+                <div class="output-video-box">
+                    <video class ="video-box" controls width="520" height="320"></video>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+
+</html>

@@ -11,7 +11,7 @@ function getVideo(){
        let formData = new FormData();
        formData.append("file", inputFile)
 
-       let response = await fetch("http://127.0.0.1:8000/upload", {
+       let response = await fetch("http://35.240.89.118:8000/upload", {
         method: "POST",
         body: formData
        });
